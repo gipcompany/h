@@ -35,7 +35,7 @@ $ h tech/ <tab>
 tech/apache.md   tech/bash.md
 ```
 
-See what the wrong part is? Each completed file has its parent directory name, right? I don't want it.
+The problem is that each completed file has its parent directory name, right? I don't want it.
 
 ## Expectation
 
