@@ -50,8 +50,8 @@ Here is my expecting behaviour.
 
 ```bash
 $ h tech/ <tab>
-bash.md     other.md                  ruby_object_to_javascript_json.md
-apache.md   has    ruby_literals.md   subdir/
+space.md    bash.md     other.md           ruby_object_to_javascript_json.md
+apache.md   has         ruby_literals.md   subdir/
 ```
 
 How should the code be fixed? I really need your `help`!
