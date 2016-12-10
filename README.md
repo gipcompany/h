@@ -30,7 +30,7 @@ h
 $ ./h/h
 ```
 
-However, the current `h` command can't work correctly.
+However, the current `h` command can't work as I expected.
 
 ## Problem
 
