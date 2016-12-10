@@ -42,7 +42,7 @@ space.md         tech/bash.md   tech/other.md           tech/ruby_object_to_java
 tech/apache.md   tech/has       tech/ruby_literals.md   tech/subdir/
 ```
 
-The problem is that each completed file has its parent directory name, right? I don't want it.
+The problem is that each completed file has its parent directory name(`tech`), right? I don't want it.
 
 ## Expectation
 
