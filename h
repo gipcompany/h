@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
 _h () {
-  local cur
-  COMPREPLY=()
-  cur=${COMP_WORDS[COMP_CWORD]}
-  k=0
-  i="${HOME}/git/h/help"
-  for j in $(compgen -f "$i/$cur"); do
-    [ -d "$j" ] && j="${j}/" || j="${j}"
-    COMPREPLY[k++]=${j#$i/}
-  done
+  local cur=$2
+  local _items
+  local pwd=$PWD
+  cd "$HOME"/git/gipcompany/work/help
+  _items=($(compgen -f -- "$cur"))
+  COMPREPLY=("${_items[@]##*/}")
+  cd "$pwd"
 }
+
 complete -o nospace -F _h h
