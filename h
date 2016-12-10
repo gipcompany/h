@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 _h () {
   local cur
   COMPREPLY=()

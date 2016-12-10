@@ -8,7 +8,7 @@ Hey, `bash` lovers! I just created a simple bash completion functon called `h`(h
 
 ```bash
 $ git clone git@github.com:gipcompany/h.git
-$ source h/h.sh
+$ ./h/h
 ```
 
 However, the current `h` command can't work correctly.
