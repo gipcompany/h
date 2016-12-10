@@ -2,12 +2,25 @@
 
 ## Introduction
 
-Hey, `bash` lovers! I just created a simple bash completion functon called `h`(help).
+Hey, `bash` lovers! I just created a simple bash completion function called `h`(help).
 
 `h` can complete files and directories in a specific directory.
 
 ```bash
 $ git clone git@github.com:gipcompany/h.git
+$ tree h
+h
+├── README.md
+├── h
+└── help
+    ├── english
+    │   ├── apple.md
+    │   └── banana.md
+    └── tech
+        ├── apache.md
+        └── bash.md
+
+3 directories, 6 files
 $ ./h/h
 ```
 
