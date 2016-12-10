@@ -8,6 +8,7 @@ Hey, `bash` lovers! I just created a simple bash completion function called `h`(
 
 ```bash
 $ git clone git@github.com:gipcompany/h.git
+
 $ tree h
 h
 ├── README.md
@@ -18,9 +19,14 @@ h
     │   └── banana.md
     └── tech
         ├── apache.md
-        └── bash.md
+        ├── bash.md
+        ├── has\ space.md
+        ├── other.md
+        ├── ruby_literals.md
+        ├── ruby_object_to_javascript_json.md
+        └── subdir
+            └── subfile.md
 
-3 directories, 6 files
 $ ./h/h
 ```
 
@@ -32,7 +38,8 @@ Below is the current behaviour.
 
 ```bash
 $ h tech/ <tab>
-tech/apache.md   tech/bash.md
+space.md         tech/bash.md   tech/other.md           tech/ruby_object_to_javascript_json.md
+tech/apache.md   tech/has       tech/ruby_literals.md   tech/subdir/
 ```
 
 The problem is that each completed file has its parent directory name, right? I don't want it.
@@ -43,7 +50,8 @@ Here is my expecting behaviour.
 
 ```bash
 $ h tech/ <tab>
-apache.md   bash.md
+bash.md     other.md                  ruby_object_to_javascript_json.md
+apache.md   has    ruby_literals.md   subdir/
 ```
 
 How should the code be fixed? I really need your `help`!
