@@ -38,8 +38,8 @@ Below is the current behaviour.
 
 ```bash
 $ h tech/ <tab>
-space.md         tech/bash.md   tech/other.md           tech/ruby_object_to_javascript_json.md
-tech/apache.md   tech/has       tech/ruby_literals.md   tech/subdir/
+tech/bash.md     tech/other.md           tech/ruby_object_to_javascript_json.md
+tech/apache.md   tech/ruby_literals.md   tech/subdir/
 ```
 
 The problem is that each completed file has its parent directory name(`tech`), right? I don't want it.
@@ -50,8 +50,8 @@ Here is my expecting behaviour.
 
 ```bash
 $ h tech/ <tab>
-bash.md     other.md       ruby_object_to_javascript_json.md
-apache.md   has space.md   ruby_literals.md                    subdir/
+bash.md     other.md           ruby_object_to_javascript_json.md
+apache.md   ruby_literals.md   subdir/
 ```
 
 How should the code be fixed? I really need your `help`!
